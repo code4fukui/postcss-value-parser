@@ -1,6 +1,6 @@
-var test = require("tape");
-var parse = require("../lib/parse");
-var stringify = require("../lib/stringify");
+import { test } from "../tape.js";
+import { parse } from "../lib/parse.js";
+import { stringify } from "../lib/stringify.js";
 
 var tests = [
   {

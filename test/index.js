@@ -1,8 +1,8 @@
-var test = require("tape");
-var parser = require("..");
+import { test } from "../tape.js";
+import { ValueParser as parser } from "../ValueParser.js";
 
-test("ValueParser", function(tp) {
-  tp.test("i/o", function(t) {
+test("ValueParser", async function(tp) {
+  await tp.test("i/o", function(t) {
     var tests = [
       " rgba( 34 , 45 , 54, .5 ) ",
       "w1 w2 w6 \n f(4) ( ) () \t \"s't\" 'st\\\"2'"
@@ -20,7 +20,7 @@ test("ValueParser", function(tp) {
     });
   });
 
-  tp.test("walk", function(t) {
+  await tp.test("walk", function(t) {
     t.plan(4);
     var result;
 

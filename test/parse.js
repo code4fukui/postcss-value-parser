@@ -1,5 +1,5 @@
-var test = require("tape");
-var parse = require("../lib/parse");
+import { test } from "../tape.js";
+import { parse } from "../lib/parse.js";
 
 var tests = [
   {

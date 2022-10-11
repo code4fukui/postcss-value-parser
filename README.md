@@ -7,7 +7,7 @@ Transforms CSS declaration values and at-rule parameters into a tree of nodes, a
 ## Usage
 
 ```js
-var valueParser = require('postcss-value-parser');
+import { ValueParser as valueParser } from 'https://code4fukui.github.io/postcss-value-parser/ValueParser.js';
 var cssBackgroundValue = 'url(foo.png) no-repeat 40px 73%';
 var parsedValue = valueParser(cssBackgroundValue);
 // parsedValue exposes an API described below,
@@ -41,7 +41,7 @@ For example, parsing the value `rgba(233, 45, 66, .5)` will return the following
 If you wanted to convert each `rgba()` value in `sourceCSS` to a hex value, you could do so like this:
 
 ```js
-var valueParser = require('postcss-value-parser');
+import { ValueParser as valueParser } from 'https://code4fukui.github.io/postcss-value-parser/ValueParser.js';
 
 var parsed = valueParser(sourceCSS);
 
@@ -196,7 +196,7 @@ Node-specific properties:
 ## API
 
 ```js
-var valueParser = require('postcss-value-parser');
+import { ValueParser as valueParser } from 'https://code4fukui.github.io/postcss-value-parser/ValueParser.js';
 ```
 
 ### valueParser.unit(quantity)

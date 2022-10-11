@@ -1,5 +1,5 @@
-var test = require("tape");
-var unit = require("../lib/unit");
+import { test } from "../tape.js";
+import { unit } from "../lib/unit.js";
 
 var tests = [
   {
